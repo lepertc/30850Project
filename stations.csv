@@ -1,0 +1,489 @@
+"","name","number","start.freq","end.freq"
+"1","10th & Monroe St NE",31504,23740,19031
+"2","10th & U St NW",31111,121408,122808
+"3","10th St & Constitution Ave NW",31219,128162,146563
+"4","11th & Kenyon St NW",31102,126550,96489
+"5","11th & M St NW",31266,110648,106420
+"6","12th & Army Navy Dr",31008,26091,26949
+"7","12th & Newton St NE",31501,10746,8636
+"8","13th & D St NE",31622,96073,93294
+"9","13th & H St NE",31611,94923,105874
+"10","13th St & New York Ave NW",31227,104998,128028
+"11","14th & D St SE",31607,67771,67841
+"12","14th & G St NW",31238,124093,132702
+"13","14th & Harvard St NW",31105,128384,87086
+"14","14th & R St NW",31202,167558,180965
+"15","14th & Rhode Island Ave NW",31203,189453,198596
+"16","14th & V St NW",31101,231443,248597
+"17","14th St & New York Ave NW",31216,93541,97297
+"18","14th St & Spring Rd NW",31401,62584,48829
+"19","14th St Heights / 14th & Crittenden St NW",31402,17564,12148
+"20","15th & Crystal Dr",31003,29205,29947
+"21","15th & P St NW",31201,291437,320999
+"22","16th & Harvard St NW",31103,158906,88877
+"23","17th & Corcoran St NW",31214,221519,229955
+"24","17th & K St NW",31213,152623,166485
+"25","18th & Eads St.",31001,19211,18443
+"26","18th & M St NW",31221,117454,123560
+"27","19th & E Street NW",31206,44690,43602
+"28","19th & East Capitol St SE",31601,36923,37973
+"29","19th & L St NW",31224,85434,87182
+"30","19th St & Constitution Ave NW",31235,111301,116600
+"31","19th St & Pennsylvania Ave NW",31100,82532,76881
+"32","1st & M St NE",31603,163653,169074
+"33","1st & N St  SE",31209,37632,46431
+"34","20th & Crystal Dr",31002,35147,40281
+"35","20th & E St NW",31204,95644,98028
+"36","20th St & Florida Ave NW",31110,178537,177363
+"37","21st & I St NW",31205,130083,151701
+"38","21st & M St NW",31212,163528,175404
+"39","23rd & Crystal Dr",31011,33310,39825
+"40","25th St & Pennsylvania Ave NW",31237,145857,154900
+"41","26th & S Clark St",31012,15317,15358
+"42","27th & Crystal Dr",31009,35247,39019
+"43","34th St & Wisconsin Ave NW",31226,48695,38315
+"44","36th & Calvert St NW / Glover Park",31304,37873,21862
+"45","37th & O St NW / Georgetown University",31236,91460,88912
+"46","3rd & D St SE",31605,99204,97431
+"47","3rd & H St NE",31616,122408,130477
+"48","3rd & H St NW",31604,93390,93236
+"49","4th & East Capitol St NE",31618,116141,111181
+"50","4th & M St SW",31108,129202,147435
+"51","4th & W St NE",31500,29318,28788
+"52","5th & F St NW",31620,109063,119948
+"53","5th & K St NW",31600,182482,192149
+"54","7th & T St NW",31109,128145,134220
+"55","8th & Eye St SE / Barracks Row",31608,45256,46545
+"56","8th & H St NW",31228,188628,214308
+"57","Adams Mill & Columbia Rd NW",31104,192286,162280
+"58","Anacostia Library",31804,3526,3123
+"59","Anacostia Metro",31801,9389,9995
+"60","Aurora Hills Community Ctr/18th & Hayes St",31004,16446,15671
+"61","Benning Branch Library",31705,1840,2099
+"62","Bladensburg Rd & Benning Rd NE",31617,37232,41596
+"63","C & O Canal & Wisconsin Ave NW",31225,116338,153274
+"64","Calvert & Biltmore St NW",31106,93881,74451
+"65","Columbus Circle / Union Station",31623,412433,424648
+"66","Connecticut Ave & Newark St NW / Cleveland Park",31305,53742,47110
+"67","Convention Center / 7th & M St NW",31223,138511,134550
+"68","Crystal City Metro / 18th & Bell St",31007,70911,55477
+"69","Eads & 22nd St S",31013,17328,18639
+"70","Eads St & 15th St S",31000,11387,9346
+"71","Eastern Market / 7th & North Carolina Ave SE",31610,112951,108571
+"72","Eastern Market Metro / Pennsylvania Ave & 7th St SE",31613,222406,217264
+"73","Eckington Pl & Q St NE",31505,57901,54473
+"74","Florida Ave & R St NW",31503,100320,100255
+"75","Georgetown Harbor / 30th St NW",31215,104608,148395
+"76","Georgia & New Hampshire Ave NW",31400,88422,67721
+"77","Georgia Ave and Fairmont St NW",31207,38659,26736
+"78","Good Hope & Naylor Rd SE",31700,1914,1041
+"79","Good Hope Rd & MLK Ave SE",31802,7614,8308
+"80","Harvard St & Adams Mill Rd NW",31112,29171,29715
+"81","John McCormack Dr & Michigan Ave NE",31502,18114,15336
+"82","Kennedy Center",31211,38435,43319
+"83","L'Enfant Plaza / 7th & C St SW",31218,124457,127361
+"84","Lamont & Mt Pleasant NW",31107,119509,93257
+"85","Lincoln Park / 13th & East Capitol St NE ",31619,134001,124943
+"86","M St & New Jersey Ave SE",31208,68071,84927
+"87","Maine Ave & 7th St SW",31609,44759,57776
+"88","Massachusetts Ave & Dupont Circle NW",31200,393051,439746
+"89","Minnesota Ave Metro/DOES",31703,2871,2845
+"90","Nannie Helen Burroughs & Minnesota Ave NE",31704,894,1076
+"91","New Hampshire Ave & T St NW",31229,231266,231134
+"92","New York Ave & 15th St NW",31222,170125,177411
+"93","North Capitol St & F St NW",31624,185740,194004
+"94","Park Rd & Holmead Pl NW",31602,153604,122851
+"95","Pennsylvania & Minnesota Ave SE",31805,3033,4649
+"96","Pentagon City Metro / 12th & S Hayes St",31005,35208,36792
+"97","Potomac & Pennsylvania Ave SE",31606,70383,69809
+"98","Randle Circle & Minnesota Ave SE",31702,753,722
+"99","S Glebe & Potomac Ave",31010,27042,31258
+"100","S Joyce & Army Navy Dr",31006,25955,28096
+"101","Tenleytown / Wisconsin Ave & Albemarle St NW",31303,57611,30250
+"102","US Dept of State / Virginia Ave & 21st St NW",31220,73426,75249
+"103","USDA / 12th & Independence Ave SW",31217,116568,123522
+"104","Van Ness Metro / UDC",31300,45281,40368
+"105","Ward Circle / American University",31301,34529,21081
+"106","Wisconsin Ave & Newark St NW",31302,52168,31017
+"107","11th & F St NW",31262,60801,64693
+"108","11th & H St NE",31614,64147,74382
+"109","14th & D St NW / Ronald Reagan Building",31231,128532,147498
+"110","15th St & Massachusetts Ave SE",31626,51918,50003
+"111","17th & K St NW / Farragut Square",31233,118372,135299
+"112","18th St & Pennsylvania Ave NW",31242,99411,97174
+"113","1st & Rhode Island Ave NW",31506,92069,93424
+"114","21st St & Constitution Ave NW",31261,56191,52434
+"115","3000 Connecticut Ave NW / National Zoo",31307,49859,36480
+"116","3rd & G St SE",31625,61424,60627
+"117","4th & D St NW / Judiciary Square",31621,62305,60494
+"118","4th & E St SW",31244,99977,114616
+"119","6th & H St NE",31615,82743,91061
+"120","7th & F St NW / National Portrait Gallery",31232,162781,180372
+"121","7th & R St NW / Shaw Library",31245,111057,111036
+"122","9th & Upshur St NW",31404,38359,29435
+"123","Anacostia Ave & Benning Rd NE / River Terrace ",31708,6857,7187
+"124","Benning Rd & East Capitol St NE / Benning Rd Metro",31707,3268,2734
+"125","Branch & Pennsylvania Ave SE",31701,1551,898
+"126","California St & Florida Ave NW",31116,112036,119733
+"127","Clarendon Blvd & N Fillmore St",31021,23414,16771
+"128","Clarendon Blvd & Pierce St",31016,29167,26502
+"129","Clarendon Metro / Wilson Blvd & N Highland St",31022,35552,27584
+"130","Columbia Rd & Belmont St NW",31113,88874,57004
+"131","Columbia Rd & Georgia Ave NW",31115,63355,42675
+"132","Congress Heights Metro",31806,1955,1262
+"133","Fairfax Village",31706,1282,549
+"134","Lynn & 19th St North",31014,84937,113931
+"135","M St & Pennsylvania Ave NW",31246,130489,159754
+"136","Metro Center / 12th & G St NW",31230,147533,162234
+"137","N Rhodes & 16th St N",31018,19136,13006
+"138","Potomac Ave & 35th St S",31052,10277,12155
+"139","Rhode Island & Connecticut Ave NW",31239,131291,141044
+"140","Rosslyn Metro / Wilson Blvd & Ft Myer Dr",31015,45460,62608
+"141","Thomas Circle",31241,229327,218691
+"142","Wilson Blvd & Franklin Rd",31020,23633,17269
+"143","Wilson Blvd & N Edgewood St",31019,19440,15914
+"144","Wilson Blvd & N Uhle St",31017,43138,28913
+"145","1st & K St SE",31628,94279,103469
+"146","1st & Washington Hospital Center NW",31507,20323,14229
+"147","20th & O St NW / Dupont South",31234,115517,123978
+"148","39th & Calvert St NW / Stoddert",31306,43302,18151
+"149","4th & C St SW",31243,145897,161329
+"150","Central Library / N Quincy St & 10th St N",31025,16202,14698
+"151","D St & Maryland Ave NE",31612,90391,84752
+"152","Jefferson Dr & 14th St SW",31247,280733,289246
+"153","Ohio Dr & West Basin Dr SW / MLK & FDR Memorials",31240,100460,100560
+"154","Virginia Square Metro / N Monroe St & 9th St N",31024,37997,33206
+"155","Washington Blvd & 10th St N",31026,15886,11325
+"156","12th & L St NW",31251,85200,81606
+"157","15th & N Scott St",31031,20238,15093
+"158","19th & K St NW",31253,56361,53910
+"159","20th & L St NW",31250,53379,51734
+"160","21st St & Pennsylvania Ave NW",31252,58951,57886
+"161","Ballston Metro / N Stuart & 9th St N",31037,41869,36243
+"162","Barcroft Community Center",31033,11280,8425
+"163","Fairfax Dr & Kenmore St",31040,13689,11569
+"164","Fairfax Dr & Wilson Blvd",31023,22883,19922
+"165","George Mason Dr & Wilson Blvd",31036,13240,12267
+"166","Glebe Rd & 11th St N",31038,11908,10458
+"167","Good Hope Rd & 14th St SE",31803,4776,4801
+"168","Jefferson Memorial",31249,178134,181237
+"169","Key Blvd & N Quinn St",31027,14114,10948
+"170","Lee Hwy & N Adams St",31030,28490,19962
+"171","N Quincy St & Glebe Rd",31035,16954,14222
+"172","N Randolph St & Fairfax Dr",31034,19822,18549
+"173","N Veitch  & 20th St N",31029,20650,17682
+"174","N Veitch & Key Blvd",31028,16487,10574
+"175","Smithsonian-National Mall / Jefferson Dr & 12th St SW",31248,178772,185904
+"176","Washington Blvd & 7th St N",31032,6973,6095
+"177","Wilson Blvd & N Quincy St",31039,25602,22190
+"178","10th & E St NW",31256,77616,88648
+"179","15th & K St NW",31254,81996,84712
+"180","22nd & I St NW / Foggy Bottom",31257,123965,124099
+"181","24th & N St NW",31255,75818,83858
+"182","Arlington Blvd & N Queen St",31051,12232,12991
+"183","Barton St & 10th St N",31050,11345,9001
+"184","Braddock Rd Metro",31047,37661,31007
+"185","Commerce St & Fayette St",31045,10245,10975
+"186","Gallaudet / 8th St & Florida Ave NE",31508,34111,32632
+"187","Henry St & Pendleton St",31046,7283,6753
+"188","King St & Patrick St",31044,15329,17979
+"189","King St Metro South",31048,28613,21367
+"190","Market Square / King St & Royal St",31042,23977,28602
+"191","Prince St & Union St",31041,15456,24120
+"192","Saint Asaph St & Pendleton  St",31043,13317,16067
+"193","Utah St & 11th St N ",31049,12208,10228
+"194","Lincoln Memorial",31258,302174,300727
+"195","10th & K St NW",31263,86148,83124
+"196","20th St & Virginia Ave NW",31259,25500,27395
+"197","23rd & E St NW ",31260,54973,53768
+"198","28th St S & S Meade St",31055,5362,6530
+"199","39th & Veazey St NW",31308,22525,13711
+"200","3rd & M St NE",31627,81646,87359
+"201","Columbia Pike & S Courthouse Rd",31053,9054,7518
+"202","Fessenden St & Wisconsin Ave NW",31309,7660,7360
+"203","Walter Reed Community Center / Walter Reed Dr & 16th St S",31054,2145,2423
+"204","12th & Irving St NE",31511,10446,9728
+"205","12th & U St NW",31268,89660,94189
+"206","13th St & Eastern Ave",32006,5207,3953
+"207","14th & Upshur St NW",31406,23240,16067
+"208","14th St & Colorado Ave NW",31407,15415,9786
+"209","15th & East Capitol St NE",31630,37470,34893
+"210","15th & Euclid St  NW",31117,69143,48011
+"211","15th & F St NE",31632,33241,34722
+"212","17th St & Massachusetts Ave NW",31267,101975,102296
+"213","18th St & Rhode Island Ave NE",31510,4118,4143
+"214","18th St & Wyoming Ave NW",31114,91898,80454
+"215","34th St & Minnesota Ave SE",31709,220,187
+"216","5th & Kennedy St NW",31403,8907,8494
+"217","5th St & Massachusetts Ave NW",31265,111345,113340
+"218","6th St & Indiana Ave NW",31264,76705,84730
+"219","8th & East Capitol St NE",31629,47064,42034
+"220","8th & F St NE",31631,52859,55925
+"221","Alabama & MLK Ave SE",31800,1337,1293
+"222","Connecticut & Nebraska Ave NW",31310,24003,17871
+"223","Georgia Ave & Emerson St NW",31405,11325,7422
+"224","Neal St & Trinidad Ave NE",31512,24947,22227
+"225","New Jersey Ave & R St NW",31509,49233,48425
+"226","Pleasant St & MLK Ave SE",31807,3271,3044
+"227","S Arlington Mill Dr & Campbell Ave",31060,10145,11511
+"228","S Four Mile Run & Walter Reed Dr",31059,3788,4212
+"229","S Four Mile Run Dr & S Shirlington Rd",31057,4744,5067
+"230","S Kenmore & 24th St S",31061,1274,1485
+"231","S Oakland St & Columbia Pike",31058,1230,1373
+"232","S Troy St & 26th St S",31056,4739,5122
+"233","Wisconsin Ave & O St NW",31312,56126,62785
+"234","3rd & Elm St NW",31118,42692,41713
+"235","3rd St & Pennsylvania Ave SE",31269,81006,73829
+"236","8th & D St NW",31270,70584,78986
+"237","Bethesda Ave & Arlington Rd",32002,10344,11411
+"238","Columbia Pike & S Dinwiddie St / Arlington Mill Community Center",31068,3946,4474
+"239","Columbia Pike & S Orme St",31066,7255,7011
+"240","Columbia Pike & S Walter Reed Dr",31067,6999,6942
+"241","Constitution Ave & 2nd St NW/DOL",31271,107563,112992
+"242","Cordell & Norfolk Ave",32008,6135,6254
+"243","E Montgomery Ave & Maryland Ave",32007,1670,1622
+"244","Fallsgrove Blvd & Fallsgrove Dr",32004,1433,1507
+"245","Fenton St & New York Ave ",32001,6245,4854
+"246","Frederick Ave & Horners Ln",32009,803,671
+"247","Friendship Hts Metro/Wisconsin Ave & Wisconsin Cir",32014,12958,12132
+"248","Hamlin & 7th St NE",31514,10347,8310
+"249","Independence Ave & L'Enfant Plaza SW/DOE",31633,37329,38308
+"250","Maple & Ritchie Ave",32011,2941,6206
+"251","Montgomery & East Ln",32013,6671,4890
+"252","N Pershing Dr & Wayne St",31065,11781,10185
+"253","Norfolk Ave & Fairmont St",32000,5758,4878
+"254","Pershing & N George Mason Dr",31069,11454,10300
+"255","Philadelphia & Maple Ave",32010,3205,6674
+"256","Rhode Island Ave & V St NE",31513,26564,12446
+"257","S George Mason Dr & 13th St S",31062,856,904
+"258","S George Mason Dr & Four Mile Run",31063,3805,4161
+"259","S Stafford & 34th St S",31064,1502,1263
+"260","Silver Spring Metro/Colesville Rd & Wayne Ave",32012,4816,4514
+"261","Traville Gateway Dr & Gudelsky Dr",32005,484,493
+"262","Washington & Independence Ave SW/HHS",31272,82289,90892
+"263","10th & Florida Ave NW",31120,33988,32025
+"264","14th & Belmont St NW",31119,75865,68805
+"265","31st & Woodrow St S",31072,1716,530
+"266","3rd & Tingey St SE",31634,46823,58203
+"267","47th & Elm St",32021,5023,4507
+"268","Arlington Blvd & Fillmore St",31070,5536,6052
+"269","Battery Ln & Trolley Trail",32027,5908,5620
+"270","Broschart & Blackwell Rd",32030,141,128
+"271","Calvert St & Woodley Pl NW",31121,87620,80771
+"272","Carroll & Ethan Allen Ave",32026,10424,9530
+"273","Carroll & Westmoreland Ave",32025,7548,5252
+"274","Connecticut Ave & Tilden St NW",31313,15031,11179
+"275","Crabbs Branch Way & Calhoun Pl",32020,1524,1601
+"276","Crabbs Branch Way & Redland Rd",32015,338,394
+"277","Deanwood Rec Center",31711,556,644
+"278","Dennis & Amherst Ave",32022,1068,915
+"279","East West Hwy & Blair Mill Rd",32019,5478,4115
+"280","Fallsgrove Dr & W Montgomery Ave",32016,937,912
+"281","Fenton St & Ellsworth Dr ",32036,5377,5383
+"282","Fenton St & Gist Ave",32024,5493,4322
+"283","Fleet St & Ritchie Pkwy",32032,1144,1415
+"284","Friendship Blvd & Willard Ave",32040,4767,4533
+"285","Georgia Ave & Spring St",32035,2450,2026
+"286","Hains Point/Buckeye & Ohio Dr SW",31273,23100,24209
+"287","King Farm Blvd & Piccard Dr",32038,3299,2679
+"288","King Farm Blvd & Pleasant Dr",32037,2309,2620
+"289","Long Bridge Park/Long Bridge Dr & 6th St S",31071,4151,4598
+"290","Monroe St & Monroe Pl",32017,997,1114
+"291","Montgomery Ave & Waverly St ",32003,4279,2864
+"292","Montgomery College/W Campus Dr & Mannakee St",32023,1432,1570
+"293","Nannie Helen Burroughs Ave & 49th St NE",31710,726,902
+"294","Needwood Rd & Eagles Head Ct",32018,656,635
+"295","New Jersey Ave & N St NW/Dunbar HS",31636,43107,39675
+"296","Norfolk & Rugby Ave",32028,3359,2854
+"297","North Capitol St & G Pl NE",31637,39563,39416
+"298","Offutt Ln & Chevy Chase Dr",32029,5489,4947
+"299","Old Georgetown Rd & Southwick St",32039,3813,2566
+"300","Piccard & W Gude Dr",32033,891,1128
+"301","Potomac Ave & 8th St SE",31635,13701,14183
+"302","Ripley & Bonifant St",32034,4884,3250
+"303","Taft St & E Gude Dr",32031,405,462
+"304","TJ Cmty Ctr / 2nd St & S Old Glebe Rd",31074,5099,5612
+"305","Washington Blvd & Walter Reed Dr ",31073,5454,5708
+"306","1st & H St NW",31638,38409,39398
+"307","Fort Totten Metro",31515,5087,3727
+"308","Medical Center Dr & Key West Ave",32041,889,904
+"309","Rhode Island Ave Metro",31516,14287,14213
+"310","Rockville Metro East",32044,1572,1591
+"311","Rolfe St & 9th St S",31075,2125,1813
+"312","Shady Grove Hospital",32042,328,311
+"313","Shirlington Transit Center / S Quincy & Randolph St",31076,2761,3907
+"314","Takoma Metro",31408,25397,20805
+"315","Veterans Pl & Pershing Dr ",32043,2024,2091
+"316","Bethesda Metro",32048,14655,9376
+"317","Iwo Jima Memorial/N Meade & 14th St N",31077,33548,39578
+"318","River Rd & Landy Ln",32046,9524,9322
+"319","Rockville Metro West",32047,1922,1744
+"320","Shady Grove Metro West",32045,4377,4017
+"321","10th & G St NW",31274,41077,47623
+"322","34th & Water St NW",31314,38089,54110
+"323","6th & S Ball St",31090,3181,3694
+"324","Arlington Blvd & S George Mason Dr/NFATC",31078,5382,4509
+"325","Ballenger Ave & Dulaney St",31084,11161,9794
+"326","Court House Metro / 15th & N Uhle St ",31089,32902,24144
+"327","Duke St & John Carlyle St",31081,5788,4963
+"328","Eisenhower Ave & Mill Race Ln",31082,4461,4485
+"329","Lee Hwy & N Cleveland St",31079,10806,8558
+"330","Lee Hwy & N Scott St",31080,14052,12472
+"331","Monroe Ave & Leslie Ave",31087,6535,7041
+"332","Mount Vernon Ave & E Del Ray Ave",31086,7563,9524
+"333","Mount Vernon Ave & E Nelson Ave",31085,6460,6488
+"334","Mount Vernon Ave & Kennedy St",31088,5729,6826
+"335","New Hampshire Ave & 24th St NW",31275,56095,60267
+"336","Potomac Greens Dr & Slaters Ln",31083,7900,8545
+"337","Washington Adventist U / Flower Ave & Division St",32049,1840,2399
+"338","15th & L St NW",31276,48999,48886
+"339","17th & G St NW",31277,73580,78067
+"340","18th & R St NW",31278,65536,67235
+"341","21st St N & N Pierce St",31093,8191,4526
+"342","Lee Hwy & N Monroe St",31092,3159,2853
+"343","McKinley St & Connecticut Ave NW",31315,6446,5226
+"344","S Joyce & 16th St S",31091,8033,7164
+"345","Spring St & Second Ave",32050,1501,1098
+"346","Union Market/6th St & Neal Pl NE",31517,22334,22420
+"347","19th & G St NW",31279,31419,30197
+"348","Lee Hwy & N Kirkwood Rd",31094,3163,4841
+"349","11th & S St NW",31280,35021,34957
+"350","2nd & G St NE",31639,33103,34940
+"351","Army Navy Dr & S Nash St",31095,2123,1258
+"352","S Walter Reed Dr & 8th St S",31096,2193,2234
+"353","8th & O St NW",31281,60417,62116
+"354","Georgia & Missouri Ave NW",31411,3414,2440
+"355","Oklahoma Ave & D St NE",31712,8058,9654
+"356","Maryland Ave & E St NE",31640,21519,20085
+"357","New York Ave & Hecht Ave NE",31518,7356,7641
+"358","16th & Irving St NW",31122,18572,10739
+"359","16th & R St NW",31282,24551,25257
+"360","Connecticut Ave & Chevy Chase Lake Dr",32051,1857,1881
+"361","Key West Ave & Siesta Key Way",32052,347,335
+"362","King St Metro North / Cameron St",31098,7181,8408
+"363","Lee Hwy & N Woodstock St",31900,1990,1167
+"364","Madison & N Henry St",31099,3403,2583
+"365","Medical Center Metro ",32053,2512,1821
+"366","Saint Asaph & Madison St",31097,6299,7094
+"367","Washington Blvd & N Frederick St",31901,1488,1238
+"368","Wilson Blvd & N Illinois St ",31902,2249,2344
+"369","Wisconsin Ave & Ingomar St NW",31317,3254,2233
+"370","Yuma St & Tenley Circle NW",31316,3259,945
+"371","10th St & L'Enfant Plaza SW",31287,10773,9023
+"372","11th & O St NW",31286,23941,22918
+"373","14th & Girard St NW",31123,17775,7585
+"374","14th & L St NW",31283,24553,23229
+"375","17th St & Independence Ave SW",31290,43821,43931
+"376","18th & C St NW",31284,14017,13947
+"377","1st & O St NW",31519,19352,18384
+"378","22nd & P ST NW",31285,24635,26476
+"379","2nd St & Massachusetts Ave NE",31641,29434,28623
+"380","4th St & Madison Dr NW",31288,56014,56016
+"381","Commonwealth & E Monroe Ave",31913,1904,1957
+"382","Commonwealth Ave & Oak St",31906,1650,1775
+"383","Connecticut Ave & Yuma St NW",31318,5031,4595
+"384","East Falls Church Metro/Sycamore St & 19th St N",31904,1966,1940
+"385","East West Hwy & 16th St",32056,1588,1119
+"386","Henry Bacon Dr & Lincoln Memorial Circle NW",31289,62128,61419
+"387","Lyttonsville Rd & Lyttonsville Pl",32054,657,680
+"388","Potomac Ave & Main Line Blvd",31910,1643,1794
+"389","Radford & Osage St",31908,981,687
+"390","Royal & Wilkes St",31903,2270,2746
+"391","South Capitol & Atlantic St SW",31811,273,451
+"392","Woodmont Ave & Strathmore St",32055,4111,3667
+"393","14th & Irving St NW",31124,30710,20640
+"394","16th & Q St SE / Anacostia HS",31812,862,1020
+"395","1st & D St SE",31643,16945,15910
+"396","24th & R St NE / National Arboretum",31520,3546,3476
+"397","Division Ave & Foote St NE",31713,164,168
+"398","Franklin & S Washington St",31907,3507,3998
+"399","Kennebec St & 11th St N",31905,1535,1572
+"400","Lee Center",31914,1602,1772
+"401","Mount Vernon Ave & Bruce St",31912,695,983
+"402","Mount Vernon Ave & Four Mile Run Park",31909,2052,2200
+"403","New Jersey Ave & L St NW",31642,5769,5050
+"404","Potomac & Swann Ave",31916,4928,5364
+"405","Powhatan St & Bashford Ln",31915,2063,2287
+"406","Vermont Ave & I St NW",31291,13268,12860
+"407","Wisconsin Ave & Brandywine St NW",31319,3559,1398
+"408","12th St & Pennsylvania Ave SE",31644,4972,4734
+"409","22nd St & Constitution Ave NW",31292,9499,8229
+"410","3rd St & Riggs Rd NE",31412,600,914
+"411","61st St & Banks Pl NE",31714,100,125
+"412","6th & K St NE",31645,7643,8044
+"413","Carlin Springs Rd & N Thomas St",31919,1736,1351
+"414","Greensboro & International Dr",32221,189,154
+"415","Jones Branch & Westbranch Dr",32206,118,221
+"416","Library St & Freedom Dr",32216,464,460
+"417","Madison & Fairfax St",31918,3442,4039
+"418","N Lynn St & Fairfax Dr",31917,5535,6871
+"419","New Dominion Pkwy & Fountain Dr",32212,289,273
+"420","Reston Regional Library",32211,71,77
+"421","Reston Station",32215,2503,2601
+"422","Reston Town Center Transit Station",32214,1475,1426
+"423","Reston YMCA",32219,369,383
+"424","Sligo Ave & Carroll Ln",32058,1195,1172
+"425","Solutions & Greensboro Dr",32202,42,28
+"426","Spring Hill Metro",32200,239,257
+"427","Sunset Hills & Old Reston Ave",32213,876,825
+"428","Temporary Rd & Old Reston Ave",32218,573,503
+"429","Towers Crescent Dr & Tysons One Pl",32222,128,126
+"430","Town Center Pkwy & Bowman Towne Dr",32210,259,258
+"431","Tysons Corner Station",32204,943,782
+"432","Tysons West Transit Center",32208,146,153
+"433","Westpark & Jones Branch Dr",32205,720,750
+"434","Westpark & Park Run Dr",32207,284,285
+"435","Westpark Dr & Leesburg Pike",32201,154,151
+"436","15th & W St NW",31125,16737,17460
+"437","18th & Monroe St NE",31521,508,972
+"438","31st & Water St NW",31293,7363,11353
+"439","3rd & Underwood St NW",31413,1104,1122
+"440","7th & E St SW",31294,6747,7111
+"441","Amherst Ave & Elkins St",32063,363,364
+"442","Amherst Ave & Prichard Rd",32064,166,121
+"443","Georgia Ave & Piney Branch Rd NW",31414,968,772
+"444","Grandview & Blueridge Ave",32065,258,274
+"445","New Hampshire & Kirklynn Ave",32061,128,105
+"446","North Shore & Cameron Crescent Dr/Crescent Apartments",32209,114,121
+"447","North Shore Dr & Village Rd",32223,304,396
+"448","Pooks Hill Rd & Linden Ave",32057,396,366
+"449","Sunset Hills Rd & Discovery Square",32217,498,312
+"450","Takoma Park Rec Center",32059,132,239
+"451","Tysons One Pl & Chain Bridge Rd",32203,233,248
+"452","Wheaton Metro/Georgia Ave & Reedie Dr",32062,576,488
+"453","Windham Ln & Amherst Ave",32066,242,290
+"454","11th & Girard St NW",31126,7596,6479
+"455","15th & M St NW",31298,9513,9238
+"456","15th St & Constitution Ave NW",31321,14970,16083
+"457","2nd St & Seaton Pl NE",31522,3185,2414
+"458","Columbia & Ontario Rd NW",31296,8216,5860
+"459","Columbia Pike & S Taylor St",31923,152,144
+"460","Columbus Ave & Gramercy Blvd",32069,90,86
+"461","Columbus Ave & Tribeca St",32068,754,745
+"462","Connecticut Ave & R St NW",31299,8231,8309
+"463","Key West Ave & Great Seneca Hwy",32070,58,52
+"464","Nebraska Ave/AU East Campus",31320,851,839
+"465","Potomac & M St NW",31295,9715,12217
+"466","Reston Pkwy & Spectrum Dr",32225,108,106
+"467","Shady Grove Metro East",32067,992,976
+"468","Sunset Hills Rd & Isaac Newton Square",32220,735,857
+"469","Town Center Pkwy & Sunset Hills Rd",32224,161,104
+"470","Virginia Ave & 25th St NW",31297,3865,3928
+"471","Washington-Lee High School / N Stafford St & Generals Way",31920,1224,952
+"472","Westover Library / Washington Blvd & N McKinley Rd",31921,371,385
+"473","Wilson Blvd & N Troy St",31924,1772,1106
+"474","15th St & Pennsylvania Ave NW/Pershing Park",31129,4351,4682
+"475","19th & Savannah St SE",31815,8,13
+"476","1st & S Capitol St SE / Oxon Run Trail",31817,20,29
+"477","22nd & H St NW",31127,5788,5793
+"478","23rd & M St NW",31128,8028,8548
+"479","4th St & Mississippi Ave SE",31816,55,115
+"480","Alabama Ave & Stanton Rd SE / Shops at Park Village",31813,87,61
+"481","Corporate Blvd & Omega Dr",32071,101,93
+"482","Key West Ave & Diamondback Dr",32072,23,16
+"483","Livingston Rd & 3rd St SE",31818,40,52
+"484","Mississippi Ave & 19th St SE / THEARC",31814,29,32
+"485","37th & Ely Pl SE / Fort Dupont Ice Arena",31715,10,13
+"486","Joliet St & MLK Ave SW/Bald Eagle Rec Ctr",31819,11,4
+"487","Lincoln Rd & Seaton Pl NE/Harry Thomas Rec Center",31523,198,103
+"488","Maine Ave & 9th St SW",31646,1489,1651
