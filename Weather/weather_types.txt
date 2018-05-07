@@ -1,0 +1,47 @@
+SSNOW - Snowfall
+WT14 - Drizzle
+WT03 - Thunder
+WT15 - Freezing drizzle 
+WT04 - Ice pellets, sleet, snow pellets, or small hail" 
+PRCP - Precipitation
+WT05 - Hail (may include small hail)
+WT16 - Rain (may include freezing rain, drizzle, and freezing drizzle)" 
+WT17 - Freezing rain 
+WT06 - Glaze or rime 
+WT07 - Dust, volcanic ash, blowing dust, blowing sand, or blowing obstruction
+WT18 - Snow, snow pellets, snow grains, or ice crystals
+WT08 - Smoke or haze 
+WT09 - Blowing or drifting snow
+AWND - Average wind speed
+WT21 - Ground fog 
+WT11 - High or damaging winds
+WT22 - Ice fog or freezing fog
+WT01 - Fog, ice fog, or freezing fog (may include heavy fog)
+TMAX - Maximum temperature
+WT02 - Heavy fog or heaving freezing fog (not always distinguished from fog)
+WT13 - Mist
+TAVG - Average Temperature.
+TMIN - Minimum temperatureNOW - Snowfall
+WT14 - Drizzle
+WT03 - Thunder
+WT15 - Freezing drizzle 
+WT04 - Ice pellets, sleet, snow pellets, or small hail" 
+PRCP - Precipitation
+WT05 - Hail (may include small hail)
+WT16 - Rain (may include freezing rain, drizzle, and freezing drizzle)" 
+WT17 - Freezing rain 
+WT06 - Glaze or rime 
+WT07 - Dust, volcanic ash, blowing dust, blowing sand, or blowing obstruction
+WT18 - Snow, snow pellets, snow grains, or ice crystals
+WT08 - Smoke or haze 
+WT09 - Blowing or drifting snow
+AWND - Average wind speed
+WT21 - Ground fog 
+WT11 - High or damaging winds
+WT22 - Ice fog or freezing fog
+WT01 - Fog, ice fog, or freezing fog (may include heavy fog)
+TMAX - Maximum temperature
+WT02 - Heavy fog or heaving freezing fog (not always distinguished from fog)
+WT13 - Mist
+TAVG - Average Temperature.
+TMIN - Minimum temperature
