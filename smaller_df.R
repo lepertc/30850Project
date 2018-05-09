@@ -1,5 +1,6 @@
 # load the data.frame produced by getdata_bikeshare.R
 library(data.table)
+library(lubridate)
 
 sample.df = function(df, n) {
   N = nrow(df)
@@ -23,6 +24,24 @@ aggregate.daily.strong = function(df) {
   daily <- df[, list(Mean.duration.seconds = mean(Duration.seconds), 
                      Freq = sum(count)),
               by = list(Start.date, Member.type)]
+  return(daily)
+}
+
+aggregate.daily.strong.no.type = function(df) {
+  df$count <- 1
+  daily <- df[, list(Mean.duration.seconds = mean(Duration.seconds), 
+                     Freq = sum(count)),
+              by = list(Start.date)]
+  return(daily)
+}
+
+aggregate.monthly.strong = function(df) {
+  df$count <- 1
+  df$month = month(df$Start.date)
+  df$year = year(df$Start.date)
+  daily <- df[, list(Mean.duration.seconds = mean(Duration.seconds), 
+                     Freq = sum(count)),
+              by = list(year, month, Member.type)]
   return(daily)
 }
 
