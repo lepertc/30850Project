@@ -19,6 +19,14 @@ aggregate.daily = function(df) {
   return(daily)
 }
 
+aggregate.daily.no.member = function(df) {
+  df$count <- 1
+  daily <- df[, list(Mean.duration.seconds = mean(Duration.seconds), 
+                     Freq = sum(count)),
+              by = list(Start.date, Start.station, End.station)]
+  return(daily)
+}
+
 aggregate.daily.strong = function(df) {
   df$count <- 1
   daily <- df[, list(Mean.duration.seconds = mean(Duration.seconds), 

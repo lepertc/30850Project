@@ -1,0 +1,101 @@
+---
+title: "De.trending"
+author: "Chloé Lepert"
+date: "5/9/2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(cache = TRUE)
+
+library(data.table)
+
+load("data.RData")
+```
+
+```{r}
+overall <- daily.routes.cluster[, list(Freq = sum(Freq)), by = list(Start.date)]
+overall <- overall[order(overall$Start.date), ]
+overall$log.Freq = log(overall$Freq)
+```
+
+# Using previous days to detrend
+```{r}
+de.trend = function(df) {
+  df.lag = as.data.frame(embed(df$log.Freq, 366))
+  names(df.lag) = c(365:1)
+  m1 = lm(`1` ~ `365` + `30` + `7` + `2`, df.lag)
+  df = df[c(366:nrow(df))]
+  df$de.trend = df.lag$`1` - fitted(m1)
+  return(df)
+}
+```
+
+```{r}
+overall.de.trend = de.trend(overall)
+```
+
+```{r}
+plot(overall.de.trend$de.trend)
+```
+
+```{r}
+library(readr)
+load("~/Documents/30850/PSETs/project/30850Project/5and10percentSample.RData")
+weather <- read_csv("~/Documents/30850/PSETs/project/30850Project/Weather/NOAA_weather_data.csv")
+financials <- read_csv("~/Documents/30850/PSETs/project/30850Project/financials.csv")
+
+library(stringr)
+weather[is.na(weather) == TRUE] = 0
+
+convert.weather.date = function(date.str) {
+  spl = str_split(date.str, "/")[[1]]
+  if(nchar(spl[1]) == 1){
+    spl[1] = paste("0", spl[1], sep = "")
+  }
+  if(nchar(spl[2]) == 1){
+    spl[2] = paste("0", spl[2], sep = "")
+  }
+  date = as.Date(paste(spl[3], spl[1], spl[2], sep = "-"))
+  return(date)
+}
+
+date.list = as.list(weather$DATE)
+new.date.list = list()
+for(i in 1:length(date.list)) {
+  new.date.list[[i]] = convert.weather.date(date.list[[i]])
+}
+
+
+weather$date = as.Date(unlist(new.date.list))
+
+overall = de.trend(overall)
+daily.weather = merge(overall, weather, by.x = "Start.date", 
+                      by.y = "date", all.x = T)
+
+financials$date = as.character(financials$date)
+financials$date = paste(substr(financials$date, 1, 4), 
+                        substr(financials$date, 5, 6),
+                        substr(financials$date, 7, 8), sep = "-")
+financials$date = as.Date(financials$date)
+daily.weather.fin = merge(daily.weather, financials, by.x = "Start.date", 
+                      by.y = "date", all.x = T)
+
+
+```
+
+```{r}
+cor.test(daily.weather.fin$de.trend, daily.weather.fin$AWND)
+```
+
+```{r}
+cor.test(daily.weather.fin$de.trend, daily.weather.fin$PRCP)
+```
+```{r}
+cor.test(daily.weather.fin$de.trend, daily.weather.fin$SNOW)
+```
+
+```{r}
+cor.test(daily.weather.fin$de.trend, daily.weather.fin$vxo.x)
+```
