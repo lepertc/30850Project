@@ -1,4 +1,7 @@
-source("process_this.R")
+source("u_process_this.R")
+
+# percentage
+p = 5/95
 
 # Data spliting order
 # Sample 5 percent of the data in two ways:
@@ -29,15 +32,6 @@ get.p.value.census = function(df) {
   return(rbindlist(pvals))
 }
 
-de.trend = function(df) {
-  df$month = as.factor(month(df$Start.date))
-  df$dow = as.factor(weekdays(df$Start.date))
-  m = lm(Freq.sqrt ~ poly(Start.date, 2) + month + dow, df)
-  df$fit = fitted(m)
-  df$un.trended = df$Freq.sqrt - df$fit
-  return(df)
-}
-
 get.ps = function(daily.f, daily.station) {
   census = daily.station[, c(3, 39:89)]
   daily.station = daily.station[, c(1:7, 16:20, 8:15, 21:38)]
@@ -54,8 +48,18 @@ get.ps = function(daily.f, daily.station) {
   return(tt)
 }
 
-t1 = get.ps(daily.f, daily.station)
-t1$ref = 1:nrow(t1)
+sample.df = function(df, n) {
+  N = nrow(df)
+  df$index = 1:nrow(df)
+  keep = sample(N, n)
+  df = subset(df, df$index %in% keep)
+  df$index = NULL
+  return(df)
+}
+
+p1 = p*95/100
+t1 = get.ps(sample.df(daily.f, round(p1*nrow(daily.f))), 
+            sample.df(daily.station, round(p1*nrow(daily.station))))
 
 # Ordered by first 5 percent dates p.value
 daily.f = daily.f[order(daily.f$Start.date), ]
@@ -66,9 +70,11 @@ daily.station.f = daily.station[order(daily.station$Start.date), ]
 daily.station.f.SM = daily.station.f[c(1:33627), ]
 daily.station.f.L = daily.station.f[c(33626:672542), ]
 
+daily.f.L = sample.df(daily.f.L, round(p*nrow(daily.f.L)))
+daily.station.f.L = sample.df(daily.station.f.L, round(p*nrow(daily.station.f.L)))
+
 t2order = get.ps(daily.f.SM, daily.station.f.SM)
 t2 = get.ps(daily.f.L, daily.station.f.L)
-t2$ref = 1:nrow(t2)
 t2 = t2[order(t2order$p.value), ]
 
 # Ordered by 5% random sample
@@ -80,9 +86,11 @@ sam2 = sample(672542, 33627)
 daily.station.SM = daily.station[c(sam2), ]
 daily.station.L = daily.station[!c(sam2), ]
 
+daily.L = sample.df(daily.L, round(p*nrow(daily.L)))
+daily.station.L = sample.df(daily.station.L, round(p*nrow(daily.station.L)))
+
 t3order = get.ps(daily.SM, daily.station.SM)
 t3 = get.ps(daily.L, daily.station.L)
-t3$ref = 1:nrow(t3)
 t3 = t3[order(t3order$p.value), ]
 
 # Forward Stop
@@ -102,31 +110,9 @@ forward.stop = function(df, alpha) {
 t1FS = forward.stop(t1, 0.05)
 
 t2FS = forward.stop(t2, 0.05)
-#t2FS$row = 1:nrow(t2FS)
-#k.thresh = max(t2FS[t2FS$signal == TRUE, ]$row)
-#t2FS$signal = t2FS$row <= k.thresh
 
 t3FS = forward.stop(t3, 0.05)
 
-p11 = ggplot(t1FS, aes(x = 1:nrow(t1FS))) + geom_line(aes(y = quan)) + 
-  labs(y = "Forward Step", x = NULL, title = "...intuition") +
-  geom_point(size = 0.2, color = "blue", aes(y = p.value)) +
-  theme_bw() + geom_line(aes(y = 0.05), color = "red") + 
-  scale_y_continuous(limits = c(0, 1))
-
-p12 = ggplot(t2FS, aes(x = 1:nrow(t2FS))) + geom_line(aes(y = quan)) + 
-  labs(x = NULL, y = NULL, title = "...on first 10% dates") +
-  geom_point(size = 0.2, color = "blue", aes(y = p.value)) +
-  theme_bw() + geom_line(aes(y = 0.05), color = "red")
-
-p13 = ggplot(t3FS, aes(x = 1:nrow(t3FS))) + geom_line(aes(y = quan)) + 
-  labs(x = NULL, y = NULL, title = "...on random 10%") +
-  geom_point(size = 0.2, color = "blue", aes(y = p.value)) +
-  theme_bw() + geom_line(aes(y = 0.05), color = "red")
-
-grid.arrange(p11, p12, p13, ncol = 3, 
-             top = "Forward stop quantity for hypotheses ordered based on...",
-             bottom = "Blue - individual p.values; Red - alpha = 0.05 threshold") # 800 X 400
 
 # SeqStep
 
@@ -146,30 +132,8 @@ seq.step = function(df, alpha, C) {
 t1SS = seq.step(t1, 0.05, 2)
 
 t2SS = seq.step(t2, 0.05, 2)
-#t2SS$row = 1:nrow(t2SS)
-#k.thresh = max(t2SS[t2SS$signal == TRUE, ]$row)
-#t2SS$signal = t2SS$row <= k.thresh
 
 t3SS = seq.step(t3, 0.05, 2)
-
-p21 = ggplot(t1SS, aes(x = 1:nrow(t1SS))) + geom_line(aes(y = quan)) + 
-  geom_point(size = 0.2, color = "blue", aes(y = p.value)) + 
-  labs(y = "Seq Step", x = NULL) +
-  theme_bw() + geom_line(aes(y = 0.05), color = "red")
-
-p22 = ggplot(t2SS, aes(x = 1:nrow(t2SS))) + geom_line(aes( y = quan)) + 
-  geom_point(size = 0.2, color = "blue", aes(y = p.value)) + 
-  labs(x = NULL, y = NULL) +
-  theme_bw() + geom_line(aes(y = 0.05), color = "red")
-
-p23 = ggplot(t3SS, aes(x = 1:nrow(t3SS))) + geom_line(aes(y = quan)) + 
-  geom_point(size = 0.2, color = "blue", aes(y = p.value)) + 
-  labs(x = NULL, y = NULL) +
-  theme_bw() + geom_line(aes(y = 0.05), color = "red")
-
-grid.arrange(p21, p22, p23, ncol = 3, 
-             top = "Seq step quantity for hypotheses ordered based on...",
-             bottom = "Blue - individual p.values; Red - alpha = 0.05 threshold") # 800 X 400
 
 
 hinge = function(df, alpha, C) {
@@ -191,37 +155,8 @@ hinge = function(df, alpha, C) {
 t1hing = hinge(t1, 0.05, 2)
 
 t2hing = hinge(t2, 0.05, 2)
-#t2hing$row = 1:nrow(t2hing)
-#k.thresh = max(t2hing[t2hing$signal == TRUE, ]$row)
-#t2hing$signal = t2hing$row <= k.thresh
 
 t3hing = hinge(t3, 0.05, 2)
-
-p31 = ggplot(t1hing, aes(x = 1:nrow(t1SS))) + geom_line(aes(y = quan)) + 
-  geom_point(size = 0.2, color = "blue", aes(y = p.value)) + 
-  labs(y = "Hinge Exp", x = NULL) +
-  theme_bw() + geom_line(aes(y = 0.05), color = "red") +
-  scale_y_continuous(limits = c(0, 1.5))
-
-p32 = ggplot(t2hing, aes(x = 1:nrow(t2SS))) + geom_line(aes( y = quan)) + 
-  geom_point(size = 0.2, color = "blue", aes(y = p.value)) + 
-  labs(x = NULL, y = NULL) +
-  theme_bw() + geom_line(aes(y = 0.05), color = "red")
-
-p33 = ggplot(t3hing, aes(x = 1:nrow(t3SS))) + geom_line(aes(y = quan)) + 
-  geom_point(size = 0.2, color = "blue", aes(y = p.value)) + 
-  labs(x = NULL, y = NULL) +
-  theme_bw() + geom_line(aes(y = 0.05), color = "red")
-
-grid.arrange(p31, p32, p33, ncol = 3, 
-             top = "Hinge Exp quantity for hypotheses ordered based on...",
-             bottom = "Blue - individual p.values; Red - alpha = 0.05 threshold") # 800 X 400
-
-grid.arrange(p11, p12, p13, p21, p22, p23, p31, p32, p33, ncol = 3, 
-             top = "Hinge Exp quantity for hypotheses ordered based on...",
-             bottom = "Blue - individual p.values; Red - alpha = 0.05 threshold")
-
-
 
 
 t1FS$method = "Forward Stop"
@@ -268,9 +203,8 @@ ttt$ordering = factor(ttt$ordering, levels = c("Intuition", "First 5%", "Random 
 ggplot(ttt, aes(x = row)) + geom_point(aes(y = p.value), size = 0.5) + 
   geom_line(aes(y = quan, color = method)) + facet_wrap( ~ ordering, ncol=3, scales = "free") +
   theme_bw() + theme(legend.position="bottom") + geom_line(aes(y = 0.05), linetype = 2) +
-  #scale_y_continuous(limits = c(0, 3)) + 
   labs(x = NULL, y = NULL, 
-       title = "Signals detected for hypotheses ordered by intuition with various methods",
+       title = "Signals detected for hypotheses tested on 5% of the data ordered by intuition with various methods",
        caption = "Points - individual p.values; Dashed line - alpha = 0.05 threshold")
 
 k = aggregate(row ~ signal + method + ordering, ttt, FUN = max)
@@ -280,4 +214,5 @@ bh = t1[order(t1$p.value), ]
 bh$k = 1:nrow(bh)
 bh$bh_thresh = 0.05 * bh$k/nrow(bh)
 
+table(bh$p.value < bh$bh_thresh)
 ##### 

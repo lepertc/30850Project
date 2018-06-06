@@ -6,9 +6,9 @@ library(stringr)
 
 ##### Load data #####
 load("~/OneDrive/30850/PSETs/project/df.RData")
-financials <- read_csv("~/OneDrive/30850/PSETs/project/30850Project/financials.csv")
-weather <- read_csv("~/OneDrive/30850/PSETs/project/30850Project/Weather/NOAA_weather_data.csv")
-stations <- read_csv("~/OneDrive/30850/PSETs/project/30850Project/stations.csv")
+financials <- read_csv("~/OneDrive/30850/PSETs/project/30850Project/u_financials.csv")
+weather <- read_csv("~/OneDrive/30850/PSETs/project/30850Project/u_Weather/u_NOAA_weather_data.csv")
+stations <- read_csv("~/OneDrive/30850/PSETs/project/30850Project/u_stations.csv")
 
 ##### Functions #####
 de.trend = function(df) {
