@@ -16,6 +16,16 @@ u_stations.csv - census information for each station
 
 u_Weather/u_NOAA_weather_data.csv - daily weather for the DC area (measured at Reagan airport)
 
+## Datasplitting - in folder called u_data_splitting
+setup_and_sample - samples test sets for analysis of daily aggregated counts. RUN THIS FIRST
+5percent - analysis of daily counts based on 5% training set
+5percent - analysis of daily counts based on 10% training set
+5percent - analysis of daily counts based on 25% training set
+
+setup_STATIONS - constructs and preprocesse data frame for stations aggregated counts. RUN THIS FIRST
+stations_total - analysis of total station counts
+stations_prop - analysis of proportion of rides at station that are end rides
+
 ## Accumulation testing - in folder called u_Ordered
 
 u_Ordered.Rproj - environment in which to run accumulation testing
