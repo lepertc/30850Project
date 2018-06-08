@@ -24,7 +24,7 @@ setup_STATIONS - constructs and preprocesse data frame for stations aggregated c
 stations_total - analysis of total station counts
 stations_prop - analysis of proportion of rides at station that are end rides
 
-## Post-selection inference
+## Post-selection inference - in folder called u_selective_inference
 
 u_selectiveinferencenormal.R - contains code for the normal model (section 3.2)
 
