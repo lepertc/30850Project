@@ -24,6 +24,14 @@ setup_STATIONS - constructs and preprocesse data frame for stations aggregated c
 stations_total - analysis of total station counts
 stations_prop - analysis of proportion of rides at station that are end rides
 
+## Post-selection inference
+
+u_selectiveinferencenormal.R - contains code for the normal model (section 3.2)
+
+u_selectiveinferencelogistic.R - contains code for the logistic model (section 3.3)
+
+Both files assume the code in setup_and_sample.R, 5percent.R, 10percent.R, and 25percent.R from u_data_splitting has been run, as they use the same splits
+
 ## Accumulation testing - in folder called u_Ordered
 
 u_Ordered.Rproj - environment in which to run accumulation testing
